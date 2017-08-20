@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO)
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="abe chodu..so ja bc")
+    bot.send_message(chat_id=update.message.chat_id, text="hey!!look i'm working")
 from telegram.ext import CommandHandler
 start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
